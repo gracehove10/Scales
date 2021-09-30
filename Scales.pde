@@ -17,10 +17,9 @@ void scale(int x, int y) {
   noFill(); 
   while (rest < 39)
   {
-    fill(random(10), random(40), random(300),(200)); 
+    fill((float)Math.random()*10, (float)Math.random()*40, (float)Math.random()*300,(200.0)); 
     ellipse(x, y, rest, rest); 
     rest++; 
     r-=20/10;
   }
 }
-
